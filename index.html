@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💪 Workout App</title>
+    <link rel="stylesheet" href="src/assets/style.css" />
+  </head>
+  <body>
+    <!-- Header simple -->
+    <header class="header">
+      <div class="container">
+        <h1 id="userName">Mon Profil</h1>
+        <p>Niveau: <span id="userLevel">1</span></p>
+      </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container">
+      <!-- Exercice du jour -->
+      <section class="card">
+        <h2>🎯 Exercice du jour</h2>
+        <div id="exerciceCard">
+          <p>Chargement...</p>
+        </div>
+      </section>
+
+      <!-- Historique -->
+      <section class="card">
+        <h2>📊 Mes sessions</h2>
+        <ul id="sessionHistory">
+          <li>Aucune session</li>
+        </ul>
+      </section>
+
+      <select name="couleur" id="choix-couleur" required>
+        <option value="" disabled selected>Choisissez un level</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <button class="test-bouton">Suivant</button>
+    </main>
+
+    <script type="module" src="src/app/main.js"></script>
+  </body>
+</html>
+
+<!-- Ajoute la possibilité de choisir le niveau de l’utilisateur dans l’interface
+
+Ajoute un champ (input ou select) dans ton HTML pour que l’utilisateur choisisse son niveau.
+Quand l’utilisateur change de niveau, régénère le programme et affiche l’exercice du jour correspondant à ce niveau.
+Pourquoi ?
+
+Ça rend ton appli interactive et personnalisée.
+Tu pratiques la gestion d’événements, la manipulation du DOM, et la logique métier. -->

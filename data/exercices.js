@@ -1,0 +1,32 @@
+export const DATA = {
+  "exercices": [
+    {
+      "nom": "Pompes (Push-ups)",
+      "niveauRequis": 1,
+      "type": "strength",
+      "dureeOuReps": "10-20 reps",
+      "progressionSuivante": "Dips (sur banc)"
+    },
+    {
+      "nom": "Dips (sur banc)",
+      "niveauRequis": 2,
+      "type": "strength",
+      "dureeOuReps": "10-15 reps",
+      "progressionSuivante": "Tractions (Pull-ups)"
+    },
+    {
+      "nom": "Tractions (Pull-ups)",
+      "niveauRequis": 3,
+      "type": "strength",
+      "dureeOuReps": "5-10 reps",
+      "progressionSuivante": "Tractions Militaire (Pull-ups)"
+    },
+    {
+      "nom": "Tractions Militaire (Pull-ups)",
+      "niveauRequis": 4,
+      "type": "strength",
+      "dureeOuReps": "5-10 reps",
+      "progressionSuivante": null
+    }
+  ]
+};
