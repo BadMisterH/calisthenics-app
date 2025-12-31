@@ -8,16 +8,19 @@ export class Progression {
     this.exercices = exercices; //tableau
   }
 
+  getWhichExerice() {
+    return this.exercices;
+  }
+
   getExerciseForLevel(niveauUser) {
     const resultFindExoLevel = this.exercices.find(
       (element) => element.niveauRequis === niveauUser,
     );
     if (!resultFindExoLevel) return null;
-
     return resultFindExoLevel;
   }
 
-  getExerciceByType(type){
-    return this.exercices.fimter(exo => exo.type === type)
+  getExerciceByType(type) {
+    return this.exercices.filter((exo) => exo.type === type);
   }
 }

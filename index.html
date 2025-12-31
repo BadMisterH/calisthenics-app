@@ -23,25 +23,30 @@
         <div id="exerciceCard">
           <p>Chargement...</p>
         </div>
+        <button id="Precedent">Precedent</button>
+        <button id="Next">Next</button>
+      </section>
+
+      <!-- Choix de figure -->
+      <section class="card">
+        <h2>🎯 Choisir une figure à apprendre</h2>
+        <div class="figure-selector">
+          <select id="figure-select">
+            <option value="" disabled selected>Sélectionner une figure</option>
+            <option value="0">💪 Front Lever</option>
+            <option value="1">🤸 Handstand</option>
+            <option value="2">🔥 Muscle Up</option>
+          </select>
+
+          <select id="niveau-select" disabled>
+            <option value="" disabled selected>Choisir le niveau</option>
+          </select>
+
+          <button id="generer-programme" disabled>Générer le programme</button>
+        </div>
       </section>
 
       <!-- Historique -->
-      <section class="card">
-        <h2>📊 Mes sessions</h2>
-        <ul id="sessionHistory">
-          <li>Aucune session</li>
-        </ul>
-      </section>
-
-      <select name="couleur" id="choix-couleur" required>
-        <option value="" disabled selected>Choisissez un level</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-
-      <button class="test-bouton">Suivant</button>
     </main>
 
     <script type="module" src="src/app/main.js"></script>

@@ -6,6 +6,7 @@ export class Exercice {
     niveauRequis,
     type,
     dureeOuReps,
+    figure = null,
     progressionSuivante = null,
   ) {
     if (!TYPES_EXERCICES.includes(type)) {
@@ -15,9 +16,8 @@ export class Exercice {
     this.nom = nom;
     this.niveauRequis = niveauRequis;
     this.type = type;
-    this.dureeOuReps = dureeOuReps; // <-- ajout
-    this.progressionSuivante = progressionSuivante; // <-- clé
-    // si this.exerciceDuJour n’a pas de progressionSuivante → fin de progression
-    // sinon → retourne progressionSuivante
+    this.dureeOuReps = dureeOuReps;
+    this.figure = figure; // <-- ajout pour la figure
+    this.progressionSuivante = progressionSuivante;
   }
 }

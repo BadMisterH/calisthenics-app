@@ -1,32 +1,177 @@
 {
-  "exercices": [
+  "figures": [
     {
-      "nom": "Pompes (Push-ups)",
-      "niveauRequis": 1,
-      "type": "strength",
-      "dureeOuReps": "10-20 reps",
-      "progressionSuivante": "Dips (sur banc)"
+      "nom": "Front Lever",
+      "exercicesPreparatoires": [
+        {
+          "niveau": 1,
+          "exercices": [
+            {
+              "nom": "Traction classique",
+              "type": "strength",
+              "dureeOuReps": "8-12 reps"
+            },
+            {
+              "nom": "Gainage planche",
+              "type": "stamina",
+              "dureeOuReps": "30s hold"
+            },
+            {
+              "nom": "Negative Front Lever",
+              "type": "skill",
+              "dureeOuReps": "5s descente"
+            }
+          ]
+        },
+        {
+          "niveau": 2,
+          "exercices": [
+            {
+              "nom": "Front Lever Tuck",
+              "type": "skill",
+              "dureeOuReps": "10s hold"
+            },
+            {
+              "nom": "Traction lestées",
+              "type": "strength",
+              "dureeOuReps": "5-8 reps +10kg"
+            },
+            {
+              "nom": "Ice Cream Maker",
+              "type": "strength",
+              "dureeOuReps": "3-5 reps"
+            }
+          ]
+        },
+        {
+          "niveau": 3,
+          "exercices": [
+            {
+              "nom": "Front Lever Advanced Tuck",
+              "type": "skill",
+              "dureeOuReps": "10s hold"
+            },
+            {
+              "nom": "Front Lever One Leg",
+              "type": "skill",
+              "dureeOuReps": "5s hold"
+            },
+            {
+              "nom": "Front Lever Pulls",
+              "type": "strength",
+              "dureeOuReps": "3 reps"
+            }
+          ]
+        }
+      ],
+      "exerciceFinal": {
+        "nom": "Full Front Lever",
+        "niveauRequis": 4,
+        "type": "skill",
+        "dureeOuReps": "10s hold"
+      }
     },
     {
-      "nom": "Dips (sur banc)",
-      "niveauRequis": 2,
-      "type": "strength",
-      "dureeOuReps": "10-15 reps",
-      "progressionSuivante": "Tractions (Pull-ups)"
+      "nom": "Handstand",
+      "exercicesPreparatoires": [
+        {
+          "niveau": 1,
+          "exercices": [
+            {
+              "nom": "Handstand contre mur",
+              "type": "skill",
+              "dureeOuReps": "30s hold"
+            },
+            {
+              "nom": "Hollow Body Hold",
+              "type": "stamina",
+              "dureeOuReps": "30s hold"
+            },
+            {
+              "nom": "Pike Push-up",
+              "type": "strength",
+              "dureeOuReps": "8-12 reps"
+            }
+          ]
+        },
+        {
+          "niveau": 2,
+          "exercices": [
+            {
+              "nom": "Chest to Wall Handstand",
+              "type": "skill",
+              "dureeOuReps": "20s hold"
+            },
+            {
+              "nom": "Handstand Kick-up Practice",
+              "type": "skill",
+              "dureeOuReps": "10 tentatives"
+            },
+            {
+              "nom": "Handstand Shrugs",
+              "type": "strength",
+              "dureeOuReps": "8-10 reps"
+            }
+          ]
+        }
+      ],
+      "exerciceFinal": {
+        "nom": "Handstand Libre",
+        "niveauRequis": 3,
+        "type": "skill",
+        "dureeOuReps": "30s hold"
+      }
     },
     {
-      "nom": "Tractions (Pull-ups)",
-      "niveauRequis": 3,
-      "type": "strength",
-      "dureeOuReps": "5-10 reps",
-      "progressionSuivante": "Tractions Militaire (Pull-ups)"
-    },
-    {
-      "nom": "Tractions Militaire (Pull-ups)",
-      "niveauRequis": 4,
-      "type": "strength",
-      "dureeOuReps": "5-10 reps",
-      "progressionSuivante": null
+      "nom": "Muscle Up",
+      "exercicesPreparatoires": [
+        {
+          "niveau": 1,
+          "exercices": [
+            {
+              "nom": "Traction explosives",
+              "type": "strength",
+              "dureeOuReps": "5-8 reps"
+            },
+            {
+              "nom": "Dips",
+              "type": "strength",
+              "dureeOuReps": "10-15 reps"
+            },
+            {
+              "nom": "False Grip Hold",
+              "type": "skill",
+              "dureeOuReps": "15s hold"
+            }
+          ]
+        },
+        {
+          "niveau": 2,
+          "exercices": [
+            {
+              "nom": "Transition Practice",
+              "type": "skill",
+              "dureeOuReps": "5 tentatives"
+            },
+            {
+              "nom": "Negative Muscle Up",
+              "type": "skill",
+              "dureeOuReps": "3 répétitions"
+            },
+            {
+              "nom": "High Pull-ups",
+              "type": "strength",
+              "dureeOuReps": "3-5 reps"
+            }
+          ]
+        }
+      ],
+      "exerciceFinal": {
+        "nom": "Muscle Up Complet",
+        "niveauRequis": 3,
+        "type": "strength",
+        "dureeOuReps": "1-3 reps"
+      }
     }
   ]
 }

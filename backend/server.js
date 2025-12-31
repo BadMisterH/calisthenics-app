@@ -23,6 +23,7 @@ console.log("✅ __dirname:", __dirname);
 // Serve static files from the backend directory (adjust if your static files are elsewhere)
 app.use(express.static(__dirname));
 app.use(cors())
+//le cors est une protection afin d'eviter d'exploiter une api publique
 console.log("✅ Middleware static configuré");
 
 // Single route to serve exercices.json

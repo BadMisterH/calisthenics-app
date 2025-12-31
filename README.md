@@ -1,4 +1,22 @@
-# 💪 Mon Application de Workout
+
+# 💪 Atteindre une Figure avec la Progression
+
+Ce projet te permet de suivre une progression d’exercices pour atteindre une figure précise (ex : Full Front Lever, Handstand, Muscle Up…).
+
+L’application te guide étape par étape, du plus simple au plus difficile, jusqu’à la figure finale.
+
+## Exemple de progression vers une figure
+
+**Objectif : Atteindre le Full Front Lever**
+
+1. Front Lever Tuck (niveau 1)
+2. Front Lever Advanced Tuck (niveau 2)
+3. Front Lever One Leg (niveau 3)
+4. Full Front Lever (niveau 4)
+
+Chaque étape correspond à un exercice à maîtriser avant de passer au suivant. Le fichier `exercices.json` contient toutes les progressions, chaque exercice ayant une propriété `progression` (ex : "Front Lever").
+
+---
 
 ## C'est quoi ce projet ?
 
@@ -106,7 +124,6 @@ Le fichier `main.js` se lance automatiquement et :
 ## 📁 Structure du Projet
 
 ```
-Workout/
 │
 ├── 📄 index.html          → La page web
 ├── 📄 server.js            → Le serveur Express
@@ -128,9 +145,29 @@ Workout/
 
 ## 🎯 Exemple Complet (comme dans main.js)
 
-```javascript
+## 🏆 Gérer plusieurs progressions
+
+Ton fichier `exercices.json` peut contenir plusieurs progressions (Front Lever, Handstand, Muscle Up, Push-ups, etc.).
+
+Chaque exercice a une propriété `progression` qui indique à quelle progression il appartient.
+
+**Exemple d'exercices.json enrichi :**
+
+```json
+{
+   "exercices": [
+      { "nom": "Front Lever Tuck", "niveauRequis": 1, "type": "skill", "dureeOuReps": "10s hold", "progressionSuivante": "Front Lever Advanced Tuck", "progression": "Front Lever" },
+      { "nom": "Handstand contre mur", "niveauRequis": 1, "type": "skill", "dureeOuReps": "20s hold", "progressionSuivante": "Handstand libre", "progression": "Handstand" },
+      { "nom": "Pompes (Push-ups)", "niveauRequis": 1, "type": "strength", "dureeOuReps": "10-20 reps", "progressionSuivante": "Dips (sur banc)", "progression": "Push-ups" }
+      // ...
+   ]
+}
+```
+
+Pour ajouter une nouvelle progression, il suffit d’ajouter des exercices avec la même valeur dans la propriété `progression`.
+
+**Astuce :** Tu peux filtrer les exercices par progression dans ton code pour afficher ou générer des programmes spécifiques (ex : tous les exercices de la progression "Handstand").
 // 1. Je charge les exercices depuis le serveur
-const exercices = await DataLoader.chargerExercices("http://localhost:5123/api/exercices");
 
 // 2. Je crée une progression "Front Lever" avec ces exercices
 const progression = new Progression("Front Lever", exercices);
